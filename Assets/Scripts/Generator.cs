@@ -54,7 +54,7 @@ public class Generator : MonoBehaviour
     }
 
 
-    // going to work on a recursive method, this was what I came up with off the top, probably doesnt work, haven't tested
+    // going to work on a recursive method, this was what I came up with off the top, doesnt work yet, haven't tested
     Vector3 CalculateMidPointRecursively(Vector3 v1, Vector3 v2, int iterations)
     {
         if (iterations == 0)
