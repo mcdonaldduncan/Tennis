@@ -59,8 +59,6 @@ public class Generator : MonoBehaviour
     {
         if (iterations == 0)
             return CalculateMidPoint(v1, v2);
-        float calcX = (v1.x + v2.x) / 2;
-        float calcZ = (v1.z + v2.z) / 2;
-        return CalculateMidPointRecursively(EasyVector(calcX, calcZ), v2, --iterations);
+        return CalculateMidPointRecursively(CalculateMidPoint(v1, v2), v2, --iterations);
     }
 }
