@@ -38,11 +38,13 @@ public class Generator : MonoBehaviour
         Debug.DrawLine(CalculateMidPoint(CalculateMidPoint(CalculateMidPoint(EasyVector(innerOffset, 0), EasyVector(innerOffset, farZ)), EasyVector(innerOffset, farZ)), CalculateMidPoint(CalculateMidPoint(EasyVector(farX - innerOffset, 0), EasyVector(farX - innerOffset, farZ)), EasyVector(farX - innerOffset, farZ))), CalculateMidPoint(CalculateMidPoint(CalculateMidPoint(EasyVector(innerOffset, 0), EasyVector(innerOffset, farZ)), EasyVector(innerOffset, 0)), CalculateMidPoint(CalculateMidPoint(EasyVector(farX - innerOffset, 0), EasyVector(farX - innerOffset, farZ)), EasyVector(farX - innerOffset, 0))));
     }
 
+    // I didnt want to write new 50 times
     Vector3 EasyVector(float x, float z)
     {
         return new Vector3(x, 0, z);
     }
 
+    // Midpoint
     Vector3 CalculateMidPoint(Vector3 v1, Vector3 v2)
     {
         float calcX = (v1.x + v2.x) / 2;
