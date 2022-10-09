@@ -53,7 +53,6 @@ public class Generator : MonoBehaviour
         return new Vector3(calcX, 0, calcZ);
     }
 
-
     // going to work on a recursive method, this was what I came up with off the top, doesnt work yet, haven't tested
     Vector3 CalculateMidPointRecursively(Vector3 v1, Vector3 v2, int iterations)
     {
