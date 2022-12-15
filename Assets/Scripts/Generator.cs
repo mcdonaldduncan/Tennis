@@ -21,6 +21,7 @@ public class Generator : MonoBehaviour
 
         // Centre Marks
         Debug.DrawLine(CalculateMidPoint(EasyVector(0, 0), EasyVector(farX, 0)), CalculateMidPoint(EasyVector(0, 0), EasyVector(farX, 0)) + centreMarkLength);
+
         Debug.DrawLine(CalculateMidPoint(EasyVector(0, farZ), EasyVector(farX, farZ)), CalculateMidPoint(EasyVector(0, farZ), EasyVector(farX, farZ)) - centreMarkLength);
 
         // Singles sidelines
